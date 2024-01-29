@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="./mattel.jpeg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+
+        body {
+            height: 100vh;
+            margin: 0;
+            background-color: #ffe6e6; /* Fondo rosa claro */
+            font-family:'Belleza', sans-serif;
+        }
+
+        form {
+            width: 300px;
+            padding: 40px;
+            margin: auto;
+            background-color: #fff;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        h1 {
+            margin: auto;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: calc(100% - 20px);
+            margin-bottom: 15px;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #ff8080; /* Color del botón */
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>CONTACTANOS</h1>
+    <form>
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre"><br>
+        
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" id="apellido" name="apellido"><br>
+        
+        <label for="localidad">Localidad:</label><br>
+        <input type="text" id="localidad" name="localidad"><br>
+        
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4"></textarea><br>
+        
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>
